@@ -16,19 +16,21 @@ import { Http } from '@angular/http';
 //components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
+import { FilterComponent } from './components/filter/filter.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MainComponent } from './components/main/main.component';
 import { CarouselComponent } from './components/main/carousel/carousel.component';
+import { NavbarSecondaryComponent } from './components/shared/navbar-secondary/navbar-secondary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
+    FilterComponent,
     SidebarComponent,
     MainComponent,
-    CarouselComponent
+    CarouselComponent,
+    NavbarSecondaryComponent
   ],
   imports: [
     BrowserModule,

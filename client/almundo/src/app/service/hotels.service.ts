@@ -38,26 +38,12 @@ export class HotelsService {
   }
 
   getHotels(){
-        // petición por get a esa url de un api rest de pruebas
-    return this._http.get(this.urlBase)
-                     .map(res => res.json());
-   }
-
-//   getHotels(): Promise<Hotel[]> {
-//   return this._http.get(this.urlBase)
-//              .toPromise()
-//              .then(response => response.json().data as Hotel[])
-//              .catch(this.handleError);
-// }
-//
-//   private handleError(error: any): Promise<any> {
-//     console.error('An error occurred', error); // for demo purposes only
-//     return Promise.reject(error.message || error);
-//   }
-
-
+    return this._http.get (this.urlBase)
+               .map( res => res.json());
+  }
 
 }
+
 
 export interface Hotel{
   name: String;

@@ -1,13 +1,25 @@
-<app-navbar></app-navbar>
+<div style="background-color: #F4F4F4;">
+  <app-navbar></app-navbar>
 
-<div class="container">
-  <router-outlet></router-outlet>
-  <div class="row">
-    <div class="col-4">
-      <app-sidebar></app-sidebar>
-    </div>
-    <div class="col-8">
-      <app-main></app-main>
+  <app-navbar-secondary></app-navbar-secondary>
+
+  <div class="container" >
+
+    <app-filter></app-filter>
+
+    <router-outlet></router-outlet>
+
+    <div class="row">
+      <div class="col-md-4" style="margin-left: 15px;margin-right: 15px;">
+
+        <app-sidebar></app-sidebar>
+
+      </div>
+      <div class="col-md-8">
+
+        <app-main></app-main>
+
+      </div>
     </div>
   </div>
 </div>

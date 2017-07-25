@@ -1,63 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import { HotelsService, Hotel } from '../../service/hotels.service';
+import { ActivatedRoute, Router, Params } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
-import { ActivatedRoute, Router } from '@angular/router';
 
 
+import { HotelsService, Hotel } from '../../service/hotels.service';
 
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styles: []
+  providers: [ HotelsService ],
+  styles: [`
+  *{
+    background-color: #F4F4F4;
+  }
+`]
 })
 export class MainComponent implements OnInit {
 
-  hotels:Hotel[] = [];
-  result:any[];
-  private clone(object: any){
-    // hack
-    return JSON.parse(JSON.stringify(object));
-  }
+    hotels:Hotel[] = [];
+
+    constructor( private _hotelsService: HotelsService) {
+
+      this._hotelsService.getHotels()
+          .subscribe( data =>{
+              console.log("data...", data);
+          })
+
+    }
+
+    ngOnInit():void{
 
 
-  constructor( private _hotelsService: HotelsService,
-              //  private route: ActivatedRoute,
-              //  private router: Router
-             ) {
-
-               this._hotelsService.getHotels()
-                                  .subscribe(
-                                      result => {
-                                              this.hotels = result;
-
-                                              console.log(this.hotels);
-                                      },
-                                      error => {
-                                          console.log("Error: ", error);
-                                      }
-                                  );
-             }
-
-
-  ngOnInit() {
-
-    //  this.getHotels();
-
- }
-
- // getHotels() {
- //   this._hotelsService.getHotels()
- //
- // }
-
-
-
- // search() {
- // 	this.searchService.search(this.searchField.value)
- // 	  .subscribe(result => {
- //        this.result = result.artists.items
- //      });
- // }
+    }
 
 }

@@ -1,0 +1,51 @@
+<ol class="breadcrumb main-item">
+  <li class="breadcrumb-item" routerLinkActive="active"><a [routerLink]="['home']">Home</a></li>
+  <li class="breadcrumb-item active" routerLinkActive="active"><a [routerLink]="['hoteles']">Hoteles</a></li>
+  <li class="breadcrumb-item active" routerLinkActive="active"><a [routerLink]="['ubicación']">madrid</a></li>
+</ol>
+<div class="card destiny-item">
+  <div class="card-block">
+    <h4 class="card-title item-destiny">Hoteles disponibles para:</h4>
+    <ul class="nav nav-destiny">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['ubicación']"><i class="fa fa-map-marker" aria-hidden="true"></i>madrid</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" ><i class="fa fa-calendar" aria-hidden="true"></i>16/11/2016</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" ><i class="fa fa-calendar" aria-hidden="true"></i>30/11/2016</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link disabled" [routerLink]="['huéspedes']"><i class="fa fa-user-o" aria-hidden="true"></i>huéspedes
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link active" [routerLink]="['búsqueda']"><i class="fa fa-map-marker" aria-hidden="true"></i>Modificar búsqueda
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div >
+  <ul class="nav justify-content-end">
+    <li class="nav-item item-justify" routerLinkActive="active">
+      <a class="nav-link"[routerLink]="['vuelos']">
+        Ordenar
+      </a>
+    </li>
+    <li class="nav-item " routerLinkActive="active">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Más relevante
+        </button>
+        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Precio más bajo</a>
+          <a class="dropdown-item" href="#">Precio más alto</a>
+          <a class="dropdown-item" href="#">Menos estrellas</a>
+          <a class="dropdown-item" href="#">Más estrellas</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

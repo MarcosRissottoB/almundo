@@ -1,49 +1,74 @@
 <aside >
+  <div class="card" style="width: 98%;">
+    <img class="card-img-top img-fluid" src="../../assets/img/mapa-hoteles.jpeg" alt="Card image cap">
+    <a href="#" class="card-link">Ver hoteles en el mapa</a>
+  </div>
+  <div style="margin: 10px 5px;">
+    <span >Filtrar</span>
+  </div>
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-block">
-      <p class="card-text" [routerLink]="['hoteles']"> Ver hoteles en el mapa.</p>
+    <div class="card-header" role="tab" id="headingOne">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fa fa-search" aria-hidden="true"></i> Nombre de hotel
+        </a>
+        <div class="card-block collapse show" id="collapseOne"  aria-labelledby="headingOne" aria-expanded="true" >
+          <ul class="nav ">
+            <li class="item-hotel"><input class="form-control mr-sm-2" type="text" placeholder="Ingrese el nombre del"></li>
+            <li><button class="btn btn-primary my-2 my-sm-0" type="submit">Aceptar</button></li>
+          </ul>
+        </div>
     </div>
   </div>
-  <div>
-    <span>Filtrar</span>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingRange">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseRange" aria-expanded="true" aria-controls="collapseRange" >
+          <i class="fa fa-usd" aria-hidden="true"></i> Precio por noche
+        </a>
+        <input type="range" id="myRange" value="90" class="card-block collapse show" id="collapseRange"  aria-labelledby="collapseRange" aria-expanded="true">
+    </div>
   </div>
   <div class="card">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['ofertas']">
-         OFERTAS
+    <div class="card-header" role="tab">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseStars" aria-expanded="true" aria-controls="collapseStars">
+          <i class="fa fa-star" aria-hidden="true"></i> Estrellas
         </a>
-      </li>
-      <li class="list-group-item"routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['ofertas']">
-         OFERTAS
-        </a>
-      </li>
-      <li class="list-group-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['ofertas']">
-         OFERTAS
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="card">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['ofertas']">
-         OFERTAS
-        </a>
-      </li>
-      <li class="list-group-item"routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['ofertas']">
-         OFERTAS
-        </a>
-      </li>
-      <li class="list-group-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['ofertas']">
-         OFERTAS
-        </a>
-      </li>
-    </ul>
+        <div class="form-check collapse show" id="headingStarts"  aria-labelledby="headingStars" aria-expanded="true" >
+          <ul class="nav flex-column">
+            <li class="nav-item">
+                <input type="checkbox" class="form-check-input"><span>Todas las estrellas</span>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" class="form-check-input"><span><i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" class="form-check-input"><span><i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" class="form-check-input"><span><i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" class="form-check-input"><span><i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" class="form-check-input"><span><i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+            </li>
+          </ul>
+        </div>
+    </div>
   </div>
 </aside>

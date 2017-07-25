@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 body{
+  text-align: center;
   padding-bottom: 50px;
 }
-
 .carousel-item{
   widows: 100%;
   height: 100px;
@@ -17,3 +17,4 @@ body{
     height: 280px
   }
 }
+/

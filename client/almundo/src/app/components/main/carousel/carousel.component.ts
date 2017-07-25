@@ -4,8 +4,7 @@ import { ImagesService, Image } from '../../../service/images.service';
 
 @Component({
   selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styles: []
+  templateUrl: './carousel.component.html'
 })
 export class CarouselComponent implements OnInit {
 

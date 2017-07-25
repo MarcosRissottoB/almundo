@@ -1,100 +1,41 @@
-<div class="container">
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img src="/assets/img/logo-original-almundo.svg" class="img-fluid" alt="Responsive image" alt="" >
-      </a>
-
-      <div class="collapse navbar-collapse nav justify-content-end" id="navbarText">
-        <ul class="navbar-nav ">
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['ingresar']">
-              Ingresar |
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['club']">
-              <span>club</span>almundo |
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['sucursales']">
-              Sucursales |
-            </a>
-          </li>
-          <li class="nav-item dropdown" routerLinkActive="active">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="['llamanos']">
-              Llamanos
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['ayuda']">
-            | Ayuda
-            </a>
-          </li>
-        </ul>
-      </div>
-  </nav>
-</div>
-
-<div class="container">
-  <ul class="nav">
-    <li class="nav-item " routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['hoteles']">
-        Hoteles
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link"[routerLink]="['vuelos']">
-        Vuelos
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['vuelos+hotel']">
-        Vuelo + Hotel
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['paquetes']">
-        Paquetes
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['disney']">
-         Disney
-      </a>
-    </li>
-    <li class="nav-item " routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['escapadas']">
-        Escapadas
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['seguros']">
-        Seguros
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['autos']">
-        Autos
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['cruceros']">
-        Cruceros
-      </a>
-    </li>
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" [routerLink]="['ofertas']">
-         OFERTAS
-      </a>
-    </li>
-    <li class="nav-item dropdown" routerLinkActive="active">
-      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="['mas']">
-        Más
-      </a>
-    </li>
-  </ul>
+<div class="navbar-primary">
+  <div class="container ">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/logo-original-almundo.svg" class="img-fluid" alt="Responsive image" alt="" >
+        </a>
+        <div class="collapse navbar-collapse nav justify-content-end" id="navbarText">
+          <ul class="navbar-nav ">
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" [routerLink]="['ingresar']"><i class="fa fa-user" aria-hidden="true"></i>
+                Ingresar |
+              </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" [routerLink]="['club']">
+                <span class="navbar-club">club</span>almundo |
+              </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" [routerLink]="['sucursales']">
+                Sucursales |
+              </a>
+            </li>
+            <li class="nav-item dropdown" routerLinkActive="active">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="['llamanos']">
+                Llamanos
+              </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" [routerLink]="['ayuda']">
+              | Ayuda
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
 </div>
