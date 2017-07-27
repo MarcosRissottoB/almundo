@@ -39,7 +39,6 @@ import { NavbarSecondaryComponent } from './components/shared/navbar-secondary/n
     APP_ROUTING
   ],
   providers: [
-    Http,
     HotelsService,
     ImagesService
   ],

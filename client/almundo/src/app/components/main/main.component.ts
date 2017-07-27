@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, Params } from '@angular/router';
-import 'rxjs/add/operator/switchMap';
-
+import { Router } from '@angular/router';
+import { Http } from '@angular/http';
 
 import { HotelsService, Hotel } from '../../service/hotels.service';
 
@@ -18,19 +17,14 @@ import { HotelsService, Hotel } from '../../service/hotels.service';
 })
 export class MainComponent implements OnInit {
 
-    hotels:Hotel[] = [];
+    hotels:Hotel[] =[];
 
-    constructor( private _hotelsService: HotelsService) {
+    constructor( private _hotelsService: HotelsService,
+                 private router: Router
+              ) {}
 
-      this._hotelsService.getHotels()
-          .subscribe( data =>{
-              console.log("data...", data);
-          })
-
-    }
-
-    ngOnInit():void{
-
+    ngOnInit(){
+      this.hotels =this._hotelsService.getHotels();
 
     }
 
